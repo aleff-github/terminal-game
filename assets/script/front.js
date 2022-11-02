@@ -110,8 +110,19 @@ function get_image(url) {
                 return false;
             }
         });
+    },
+    help: function() {
+        help = "ls                      List of all file present in the path you are.\n\
+                pwd                     Print the name of the current working directory.\n\
+                cd                      Move yourself in the local directories.\n\
+                    - cd ..             Move yourself back of one directory\n\
+                    - cd <directory>    Move yourself to <name> directory\n\
+                play <file.mp3>         Play a song file (with mp3 extension) present in your local files\n\
+                mpv <file.mp4>          Play a video file (with mp4 extension) present in your local files\n\
+                help                    To see this content :-)"
     }
-}, {
+}, 
+{
     checkArity: false,
     greetings: 'My First JavaScript Terminal\n'
 });
