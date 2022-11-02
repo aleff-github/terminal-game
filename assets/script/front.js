@@ -124,5 +124,5 @@ function get_image(url) {
 }, 
 {
     checkArity: false,
-    greetings: 'My First JavaScript Terminal\n'
+    greetings: 'Welcome to aleff-terminal :-)\nTry to write and send help command to see what you can do\n'
 });
