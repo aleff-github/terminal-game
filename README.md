@@ -1,6 +1,3 @@
-# terminal-story
-Working on a website terminal based
-
 # Hack the terminal-game
 Do you want to hack this terminal-game?
 
