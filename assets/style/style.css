@@ -8,4 +8,5 @@
     --size: 1.4;
     /* --glow: 1 */
     /* --animation: terminal-none; */
+    word-break: break-all;
 }

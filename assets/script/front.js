@@ -120,8 +120,38 @@ cd                      Move yourself in the local directories.\n\
 play <file.mp3>         Play a song file (with mp3 extension) present in your local files\n\
 mpv <file.mp4>          Play a video file (with mp4 extension) present in your local files\n\
 help                    To see this content :-)";
+    },
+    new_command_here: function(param1, param2) {
+        if(!sec_check(param1) || (param1 == "" || param1 == undefined)){
+            return `you can do all security check needed`;
+        }
+        if(param1 != param2){
+            return "you can use the parameter";
+        } else {
+            this.echo("print something in output");
+        }
+
+        if(param1 == "photo"){
+            this.echo("You can return an HTML image tag for see an image");
+            img_source = "";
+            this.echo($(img_source));
+        } else if (param1 == "video"){
+            this.echo("or a video");
+            video_source = `<video autoplay controls>\
+                                    <source src="assets/video/<video_name>.mp4" type="video/mp4">\
+                                </video>`;
+            this.echo($(video_source));
+        } else if (param1 == "song"){
+            this.echo("or run a song");
+            audio_source = new Audio(`assets/song/<song_name>.mp4`);
+            audio_source.play();
+        } else {
+            this.echo("implement new fetures");
+        }
+
+        return ":-)";
     }
-}, 
+},
 {
     checkArity: false,
     greetings: 'Welcome to aleff-terminal :-)\nTry to write and send help command to see what you can do\n'
